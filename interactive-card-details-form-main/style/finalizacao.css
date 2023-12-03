@@ -1,0 +1,27 @@
+.finalizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.finalizacao__texto {
+    text-transform: uppercase;
+    font-stretch: condensed;
+    font-size: 28px;
+    color: var(--very-dark-violet);
+    margin: 2rem 0;
+    letter-spacing: 5px;
+}
+
+.finalizacao__texto-segundario {
+    color: var(--dark-violet);
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .finalizacao {
+        margin: auto;
+        
+    }
+}

@@ -1,0 +1,96 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem 0;
+}
+
+.formulario input::placeholder {
+    font-family: var(--fonte);
+}
+
+.formulario ::placeholder {
+    color: var(--violet);
+}
+
+.form__nome, .form__numero {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__texto{
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+    margin: 1rem 0 0.5rem;
+}
+
+.formulario__info, .formulario__info--mes, .formulario__info--ano,
+.formulario__info--cvc {
+    width: 320px;
+    border: solid 2px var(--violet);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.formulario__data-e-cvc {
+    margin-top: 1rem ;
+}
+
+.formulario__cvc--texto {
+    position: relative;
+    left: 3rem;
+
+}
+
+.input__container, .formulario__info--cvc {
+    display: flex;
+    width: 75px;
+    margin-top: 0.5rem;
+}
+
+.formulario__info--mes, .formulario__info--ano, .formulario__info--cvc {
+    width: 70px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cvc__container {
+    position: relative;
+    left: 18px;
+}
+
+.formulario__info--cvc {
+    width: 107px;
+}
+
+
+.ativa:hover{
+    padding: 0.5rem;
+    border: double 2px transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+}
+
+.erro{
+    padding: 0.5rem;
+    border: double 2px transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(var(--red), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .formulario {
+        margin: auto;
+    }
+}

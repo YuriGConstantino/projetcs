@@ -1,0 +1,67 @@
+@import url(card.css);
+@import url(form.css);
+@import url(botao.css);
+@import url(finalizacao.css);
+
+:root {
+    --fonte: 'Space Grotesk', sans-serif;
+    --branco: hsl(0, 0%, 100%);
+    --violet: hsl(270, 3%, 87%);
+    --dark-violet : hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+    --red: hsl(0, 100%, 66%);
+}
+
+.container {
+    font-family: var(--fonte);
+    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.credit {
+    font-family: var(--fonte);
+    font-size: 10px;
+    bottom: 15px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .credit {
+        font-size: 15px;
+        position: relative;
+        color: var(--branco);
+        bottom: 2rem;
+        position: absolute;
+        
+    }
+
+    .credit a {
+        text-decoration: none;
+        color: var(--dark-violet);
+    }
+
+    .credit a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+}
+
+
+
+

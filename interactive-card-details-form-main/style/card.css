@@ -1,0 +1,147 @@
+.card {
+    color: var(--branco);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.card-verso {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+.card-verso__imagem {
+    width: 290px;
+}
+
+.card-verso__numero {
+    font-size: 11px;
+    top: 35%;
+    left: 80%;
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.card-frente {
+    display: flex;
+    position: absolute;
+    top: 125px;
+    right: 70px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.card-frente__conteudo {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card-frente__imagem {
+    width: 290px;
+    margin-top: 0.5rem;
+}
+
+.card-frent__logo {
+    width: 20%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.card-frente__numero {
+    text-align: center;
+    width: 94%;
+    font-size: 21px;
+}
+
+.card-frente__nome {
+    top: 66px;
+    left: 10px;
+    position: relative;
+    font-size: 11px;
+}
+
+.card-frente__data {
+    font-size: 11px;
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+    margin: 0 1rem;
+    position: relative;
+    left: 220px;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .card {
+        background: url(../images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 35vw;
+        position: relative;
+    }
+
+    .card-frent__logo {
+        margin-left: 2rem;
+    }
+
+    .card-frente {
+        position: absolute;
+        right: -90px;
+
+    }
+
+    .card-verso {
+        height: 100px;
+        top: 400px;
+        left: 160px;
+        position: relative;
+    }
+
+    .card-frente__imagem,
+    .card-verso__imagem {
+        width: 100%;
+    }
+
+    .card-frente__numero {
+        font-size: 30px;
+        word-spacing: 10px;
+        margin: 0 auto;
+    }
+
+    .card-frente__nome-e-data {
+        font-size: 15px;
+        margin: 0 1rem;
+    }
+
+    .card-frente__nome {
+        word-spacing: 10px;
+        letter-spacing: 1px;
+        margin-left: 1rem;
+        top: 103px;
+
+    }
+
+    .card-frente__data {
+        left: 360px;
+    }
+
+    .card-verso {
+        top: 400px;
+    }
+
+    .card-verso__numero {
+        font-size: 18px;
+        top: 96px;
+    }
+
+}
