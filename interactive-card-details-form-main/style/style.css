@@ -7,7 +7,7 @@
     --fonte: 'Space Grotesk', sans-serif;
     --branco: hsl(0, 0%, 100%);
     --violet: hsl(270, 3%, 87%);
-    --dark-violet : hsl(279, 6%, 55%);
+    --dark-violet: hsl(279, 6%, 55%);
     --very-dark-violet: hsl(278, 68%, 11%);
     --red: hsl(0, 100%, 66%);
 }
@@ -17,7 +17,7 @@
     font-size: 18px;
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 .hide {
@@ -30,6 +30,16 @@
     bottom: 15px;
     margin-left: 0.5rem;
     margin-top: 1rem;
+}
+
+.credit a {
+    text-decoration: none;
+    color: var(--dark-violet);
+}
+
+.credit a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 1440px) {
@@ -47,7 +57,7 @@
         color: var(--branco);
         bottom: 2rem;
         position: absolute;
-        
+
     }
 
     .credit a {
@@ -61,7 +71,3 @@
     }
 
 }
-
-
-
-
