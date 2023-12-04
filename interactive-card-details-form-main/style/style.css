@@ -30,6 +30,7 @@
     bottom: 15px;
     margin-left: 0.5rem;
     margin-top: 1rem;
+    position: absolute;
 }
 
 .credit a {
