@@ -1,0 +1,88 @@
+@import "@/styles/variables";
+
+.card {
+    color: $white;
+    
+    &__popular {
+        color: $black;
+        position: absolute;
+        background-color: $yellow;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 10px;
+        
+    }
+
+    &__popularHide{
+        display: none;
+    }
+
+    &__img {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1.3rem 1rem;
+        font-weight: 700;
+    }
+
+    &__name {
+        letter-spacing: 2px;
+    }
+
+    &__price {
+        background-color: $green;
+        color: $black;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    &__rateContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__rate{
+        display: flex;
+        align-items: center;
+        margin: 0 2rem 0 1.4rem;
+    }
+
+    &__star {
+        margin-right: 0.5rem;
+        
+    }
+
+    &__numberRate {
+        margin-right: 0.3rem;
+    }
+
+    &__votes {
+        color: $gray;
+        font-weight: 700;
+    }
+
+    &__available {
+        color: $orange;
+    }
+
+    &__availableHide{
+        display: none;
+    }
+
+
+}
+@media (min-width: 1023px) {
+    .card {
+        &__text {
+            margin: 0 0 1rem;
+        }
+    }
+}

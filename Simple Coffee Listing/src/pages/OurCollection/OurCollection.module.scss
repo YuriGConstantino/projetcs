@@ -1,0 +1,122 @@
+/* 
+__title
+__text
+__btn
+*/
+
+@import "@/styles/variables";
+
+.collection {
+    background-color: $dark-gray;
+    width: 300px;
+    position: relative;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/vector.svg);
+    background-position: 160% 0%;
+
+
+
+    &__conteiner {
+        margin-bottom: 2rem;
+    }
+
+
+    &__title {
+        color: $white;
+        font-size: 2rem;
+        margin: 2rem 0;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin: auto;
+        color: $gray;
+        font-size: 1rem;
+        line-height: 25px;
+        width: 104%;
+    }
+
+    &__btnActiva {
+        color: $white;
+        margin: 1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem;
+        background-color: $gray;
+
+    }
+
+    &__btn {
+        color: $white;
+        font-weight: 500;
+        margin: 1rem 0;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        padding: 0.8rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    .footer {
+        margin-top: 3rem;
+        color: $white;
+    }
+
+}
+
+@media screen and (min-width: 1023px) {
+    .collection {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-position: 70% 2%;
+
+        &__title {
+            padding-top: 1rem;
+        }
+
+        &__text {
+            width: 60%;
+        }
+
+        .card__container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0 2rem;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .collection {
+        width: 60rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-position: 70% 2%;
+
+        .card__container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+    }
+}
+
