@@ -13,20 +13,10 @@ export default function OurCollection() {
 
 
     useEffect(() => {
-        // axios.get("https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json")
-        //     .then(response => {
-        //         setCoffeeCard(response.data)
+        axios.get("https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json")
+            .then(response => {
+                setCoffeeCard(response.data)
 
-        //     })
-
-        fetch('https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json')
-            .then(response => response.json())
-            .then(data => {
-                setCoffeeCard(data)
-                console.log(data)
-            })
-            .catch(error => {
-                console.log(error)
             })
 
     }, [])
