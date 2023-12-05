@@ -25,7 +25,7 @@ export default function CardCoffee({ cards }: CardsProps){
                     <span className={styles.card__popular}>Popular</span> :
                     null
                 }
-                <Image className={styles.card__img} src={cards.image} alt="" width={260} height={160} />
+                <img className={styles.card__img} src={cards.image} alt="" width={260} height={160} />
 
             </div>
 

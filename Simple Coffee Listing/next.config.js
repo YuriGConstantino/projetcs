@@ -8,7 +8,6 @@ module.exports = {
             {
                 protocol: 'https',
                 hostname: 'csyxkpbavpcrhwqhcpyy.supabase.co',
-                port: '',
                 pathname: '**',
             },
         ],
