@@ -12,7 +12,7 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         Challenge by <a href="https://devchallenges.io/challenge/45" target="_blank">DevChallenges</a>.
-        Coded by <a href="#">Yuri Gabriel Constantino</a>.
+        Coded by <a href="https://github.com/YuriGConstantino/projetcs/tree/main/Simple%20Coffee%20Listing">Yuri Gabriel Constantino</a>.
       </footer>
     </>
 
