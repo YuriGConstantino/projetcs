@@ -23,6 +23,7 @@ export default function OurCollection() {
             .then(response => response.json())
             .then(data => {
                 setCoffeeCard(data)
+                console.log(data)
             })
             .catch(error => {
                 console.log(error)
